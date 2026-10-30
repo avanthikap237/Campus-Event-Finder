@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Event Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#">Campus<span>Connect</span></a>
+    <span class="tagline">Find your next campus experience</span>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">CAMPUS LIFE, ALL IN ONE PLACE</p>
+      <h1>Discover events.<br><span>Make memories.</span></h1>
+      <p class="intro">Explore workshops, cultural shows, sports and more happening around campus.</p>
+      <div class="search-row">
+        <input id="searchInput" type="search" placeholder="Search events..." aria-label="Search events">
+        <select id="categoryFilter" aria-label="Filter by category">
+          <option value="all">All categories</option>
+          <option value="Technical">Technical</option>
+          <option value="Cultural">Cultural</option>
+          <option value="Sports">Sports</option>
+          <option value="Workshop">Workshop</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="events-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">WHAT'S HAPPENING</p>
+          <h2>Upcoming events</h2>
+        </div>
+        <p id="eventCount" class="event-count" aria-live="polite"></p>
+      </div>
+      <div id="eventGrid" class="event-grid"></div>
+      <p id="emptyMessage" class="empty-message" hidden>No events match your search. Try another keyword or category.</p>
+    </section>
+  </main>
+
+  <footer>CampusConnect · A student project demo. Event details are sample data.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
